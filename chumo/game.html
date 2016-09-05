@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>游戏</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="loading">
+        <div id="animation">
+            <div><img src="images/monkey.png"></div>
+            <img src="images/loading.png">
+        </div>
+        <p>逗粉游戏　　欢乐无限</p>
+    </div>
+
+
+    <div id="stage"></div>
+	<script>
+    	var imgsrc = "";
+    </script>
+    <script src="js/lufylegend-1.9.9.min.js" type="application/javascript" language="javascript"></script>
+    <script src="js/Funcs.js" type="application/javascript" language="javascript"></script>
+    <script src="js/game.js" type="application/javascript" language="javascript"></script>
+    <script>
+        LInit(16,"stage",640,960,main);
+    </script>
+    <script src="http://file.vsapp.cn/js/jquery-2.1.1.min.js" type="application/javascript" language="javascript"></script>
+
+    <!--分享-->
+    <div class="cover" id="share"><img src="images/yindao2.png"> </div>
+
+    <script>
+        var raffleLink = "http://www.baidu.com";//抽奖按钮的链接
+
+
+        $("#btshare").click(function(){
+            $("#share").fadeIn(100);
+        })
+        $("#share").on("touchend",function(){
+            $("#share").fadeOut(100);
+        })
+
+    </script>
+</body>
+</html>
